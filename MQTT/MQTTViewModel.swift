@@ -14,7 +14,7 @@ class MQTTViewModel: ObservableObject {
     @Published var password: String = ""
     @Published var topic: String = ""
     @Published var publishText: String = ""
-    @Published var qosOption: Int = 0
+    @Published var qosOption: QosOption = .qos0
 
     private var client: MQTTClient?
     
@@ -47,4 +47,8 @@ class MQTTViewModel: ObservableObject {
         objectWillChange.send()
     }
     
+}
+
+enum QosOption {
+    case qos0, qos1, qos2
 }

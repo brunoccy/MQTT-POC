@@ -31,9 +31,9 @@ struct ContentView: View {
                     .fontWeight(.bold)
                 
                 Picker(selection: $viewModel.qosOption, label: Text("")) {
-                    Text("At Most Once").tag(0)
-                    Text("At Least Once").tag(1)
-                    Text("Exactly Once").tag(2)
+                    Text("At Most Once").tag(QosOption.qos0)
+                    Text("At Least Once").tag(QosOption.qos1)
+                    Text("Exactly Once").tag(QosOption.qos2)
                 }
                 .pickerStyle(MenuPickerStyle())
             }

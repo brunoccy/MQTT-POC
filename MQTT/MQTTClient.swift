@@ -39,17 +39,15 @@ class MQTTClient: CocoaMQTTDelegate {
         mqtt.subscribe(topic)
     }
     
-    func publish(topic: String, text: String, qosOption: Int) {
+    func publish(topic: String, text: String, qosOption: QosOption) {
         let qos: CocoaMQTTQoS
         switch qosOption {
-        case 0:
+        case .qos0:
             qos = .qos0
-        case 1:
+        case .qos1:
             qos = .qos1
-        case 2:
+        case .qos2:
             qos = .qos2
-        default:
-            qos = .qos0
         }
         
         mqtt.publish(CocoaMQTTMessage(topic: topic, string: text, qos: qos))

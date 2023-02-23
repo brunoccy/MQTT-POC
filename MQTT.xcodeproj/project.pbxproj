@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD683C4929A79F8500BBE7EE /* MQTTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C4829A79F8500BBE7EE /* MQTTApp.swift */; };
+		FD683C4B29A79F8500BBE7EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C4A29A79F8500BBE7EE /* ContentView.swift */; };
+		FD683C4D29A79F8600BBE7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD683C4C29A79F8600BBE7EE /* Assets.xcassets */; };
+		FD683C5129A79F8600BBE7EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD683C5029A79F8600BBE7EE /* Preview Assets.xcassets */; };
+		FD683C5B29A79F8600BBE7EE /* MQTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C5A29A79F8600BBE7EE /* MQTTTests.swift */; };
+		FD683C6529A79F8600BBE7EE /* MQTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C6429A79F8600BBE7EE /* MQTTUITests.swift */; };
+		FD683C6729A79F8600BBE7EE /* MQTTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C6629A79F8600BBE7EE /* MQTTUITestsLaunchTests.swift */; };
+		FD683C7529A7A7FF00BBE7EE /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = FD683C7429A7A7FF00BBE7EE /* CocoaMQTT */; };
+		FD683C7729A7A7FF00BBE7EE /* CocoaMQTTWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = FD683C7629A7A7FF00BBE7EE /* CocoaMQTTWebSocket */; };
+		FD683C7929A7AD1100BBE7EE /* MQTTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C7829A7AD1100BBE7EE /* MQTTViewModel.swift */; };
+		FD683C7B29A7B08800BBE7EE /* MQTTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD683C7A29A7B08800BBE7EE /* MQTTClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD683C5729A79F8600BBE7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD683C3D29A79F8500BBE7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD683C4429A79F8500BBE7EE;
+			remoteInfo = MQTT;
+		};
+		FD683C6129A79F8600BBE7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD683C3D29A79F8500BBE7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD683C4429A79F8500BBE7EE;
+			remoteInfo = MQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD683C4529A79F8500BBE7EE /* MQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD683C4829A79F8500BBE7EE /* MQTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTApp.swift; sourceTree = "<group>"; };
+		FD683C4A29A79F8500BBE7EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD683C4C29A79F8600BBE7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD683C4E29A79F8600BBE7EE /* MQTT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MQTT.entitlements; sourceTree = "<group>"; };
+		FD683C5029A79F8600BBE7EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD683C5629A79F8600BBE7EE /* MQTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD683C5A29A79F8600BBE7EE /* MQTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTTests.swift; sourceTree = "<group>"; };
+		FD683C6029A79F8600BBE7EE /* MQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD683C6429A79F8600BBE7EE /* MQTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTUITests.swift; sourceTree = "<group>"; };
+		FD683C6629A79F8600BBE7EE /* MQTTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD683C7829A7AD1100BBE7EE /* MQTTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTViewModel.swift; sourceTree = "<group>"; };
+		FD683C7A29A7B08800BBE7EE /* MQTTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD683C4229A79F8500BBE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD683C7729A7A7FF00BBE7EE /* CocoaMQTTWebSocket in Frameworks */,
+				FD683C7529A7A7FF00BBE7EE /* CocoaMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5329A79F8600BBE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5D29A79F8600BBE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD683C3C29A79F8500BBE7EE = {
+			isa = PBXGroup;
+			children = (
+				FD683C4729A79F8500BBE7EE /* MQTT */,
+				FD683C5929A79F8600BBE7EE /* MQTTTests */,
+				FD683C6329A79F8600BBE7EE /* MQTTUITests */,
+				FD683C4629A79F8500BBE7EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD683C4629A79F8500BBE7EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD683C4529A79F8500BBE7EE /* MQTT.app */,
+				FD683C5629A79F8600BBE7EE /* MQTTTests.xctest */,
+				FD683C6029A79F8600BBE7EE /* MQTTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD683C4729A79F8500BBE7EE /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				FD683C4829A79F8500BBE7EE /* MQTTApp.swift */,
+				FD683C4A29A79F8500BBE7EE /* ContentView.swift */,
+				FD683C4C29A79F8600BBE7EE /* Assets.xcassets */,
+				FD683C4E29A79F8600BBE7EE /* MQTT.entitlements */,
+				FD683C4F29A79F8600BBE7EE /* Preview Content */,
+				FD683C7829A7AD1100BBE7EE /* MQTTViewModel.swift */,
+				FD683C7A29A7B08800BBE7EE /* MQTTClient.swift */,
+			);
+			path = MQTT;
+			sourceTree = "<group>";
+		};
+		FD683C4F29A79F8600BBE7EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD683C5029A79F8600BBE7EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD683C5929A79F8600BBE7EE /* MQTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD683C5A29A79F8600BBE7EE /* MQTTTests.swift */,
+			);
+			path = MQTTTests;
+			sourceTree = "<group>";
+		};
+		FD683C6329A79F8600BBE7EE /* MQTTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD683C6429A79F8600BBE7EE /* MQTTUITests.swift */,
+				FD683C6629A79F8600BBE7EE /* MQTTUITestsLaunchTests.swift */,
+			);
+			path = MQTTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD683C4429A79F8500BBE7EE /* MQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD683C6A29A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTT" */;
+			buildPhases = (
+				FD683C4129A79F8500BBE7EE /* Sources */,
+				FD683C4229A79F8500BBE7EE /* Frameworks */,
+				FD683C4329A79F8500BBE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTT;
+			packageProductDependencies = (
+				FD683C7429A7A7FF00BBE7EE /* CocoaMQTT */,
+				FD683C7629A7A7FF00BBE7EE /* CocoaMQTTWebSocket */,
+			);
+			productName = MQTT;
+			productReference = FD683C4529A79F8500BBE7EE /* MQTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD683C5529A79F8600BBE7EE /* MQTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD683C6D29A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTTTests" */;
+			buildPhases = (
+				FD683C5229A79F8600BBE7EE /* Sources */,
+				FD683C5329A79F8600BBE7EE /* Frameworks */,
+				FD683C5429A79F8600BBE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD683C5829A79F8600BBE7EE /* PBXTargetDependency */,
+			);
+			name = MQTTTests;
+			productName = MQTTTests;
+			productReference = FD683C5629A79F8600BBE7EE /* MQTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD683C5F29A79F8600BBE7EE /* MQTTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD683C7029A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTTUITests" */;
+			buildPhases = (
+				FD683C5C29A79F8600BBE7EE /* Sources */,
+				FD683C5D29A79F8600BBE7EE /* Frameworks */,
+				FD683C5E29A79F8600BBE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD683C6229A79F8600BBE7EE /* PBXTargetDependency */,
+			);
+			name = MQTTUITests;
+			productName = MQTTUITests;
+			productReference = FD683C6029A79F8600BBE7EE /* MQTTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD683C3D29A79F8500BBE7EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD683C4429A79F8500BBE7EE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FD683C5529A79F8600BBE7EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD683C4429A79F8500BBE7EE;
+					};
+					FD683C5F29A79F8600BBE7EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD683C4429A79F8500BBE7EE;
+					};
+				};
+			};
+			buildConfigurationList = FD683C4029A79F8500BBE7EE /* Build configuration list for PBXProject "MQTT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD683C3C29A79F8500BBE7EE;
+			packageReferences = (
+				FD683C7329A7A7FF00BBE7EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
+			productRefGroup = FD683C4629A79F8500BBE7EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD683C4429A79F8500BBE7EE /* MQTT */,
+				FD683C5529A79F8600BBE7EE /* MQTTTests */,
+				FD683C5F29A79F8600BBE7EE /* MQTTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD683C4329A79F8500BBE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD683C5129A79F8600BBE7EE /* Preview Assets.xcassets in Resources */,
+				FD683C4D29A79F8600BBE7EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5429A79F8600BBE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5E29A79F8600BBE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD683C4129A79F8500BBE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD683C7B29A7B08800BBE7EE /* MQTTClient.swift in Sources */,
+				FD683C7929A7AD1100BBE7EE /* MQTTViewModel.swift in Sources */,
+				FD683C4B29A79F8500BBE7EE /* ContentView.swift in Sources */,
+				FD683C4929A79F8500BBE7EE /* MQTTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5229A79F8600BBE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD683C5B29A79F8600BBE7EE /* MQTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD683C5C29A79F8600BBE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD683C6729A79F8600BBE7EE /* MQTTUITestsLaunchTests.swift in Sources */,
+				FD683C6529A79F8600BBE7EE /* MQTTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD683C5829A79F8600BBE7EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD683C4429A79F8500BBE7EE /* MQTT */;
+			targetProxy = FD683C5729A79F8600BBE7EE /* PBXContainerItemProxy */;
+		};
+		FD683C6229A79F8600BBE7EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD683C4429A79F8500BBE7EE /* MQTT */;
+			targetProxy = FD683C6129A79F8600BBE7EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD683C6829A79F8600BBE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD683C6929A79F8600BBE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FD683C6B29A79F8600BBE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MQTT/MQTT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD683C6C29A79F8600BBE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MQTT/MQTT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD683C6E29A79F8600BBE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MQTT";
+			};
+			name = Debug;
+		};
+		FD683C6F29A79F8600BBE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MQTT";
+			};
+			name = Release;
+		};
+		FD683C7129A79F8600BBE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQTT;
+			};
+			name = Debug;
+		};
+		FD683C7229A79F8600BBE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dtv.mqtt.poc.MQTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQTT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD683C4029A79F8500BBE7EE /* Build configuration list for PBXProject "MQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD683C6829A79F8600BBE7EE /* Debug */,
+				FD683C6929A79F8600BBE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD683C6A29A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD683C6B29A79F8600BBE7EE /* Debug */,
+				FD683C6C29A79F8600BBE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD683C6D29A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD683C6E29A79F8600BBE7EE /* Debug */,
+				FD683C6F29A79F8600BBE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD683C7029A79F8600BBE7EE /* Build configuration list for PBXNativeTarget "MQTTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD683C7129A79F8600BBE7EE /* Debug */,
+				FD683C7229A79F8600BBE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD683C7329A7A7FF00BBE7EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD683C7429A7A7FF00BBE7EE /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD683C7329A7A7FF00BBE7EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+		FD683C7629A7A7FF00BBE7EE /* CocoaMQTTWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD683C7329A7A7FF00BBE7EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTTWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD683C3D29A79F8500BBE7EE /* Project object */;
+}

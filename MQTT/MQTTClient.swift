@@ -24,11 +24,44 @@ class MQTTClient: CocoaMQTTDelegate {
     }
     
     func connect() {
+        // Using Certificate
+        // addCertificate()
+        
         if mqtt.connect() {
             log += "Connection established\n"
         } else {
             log += "Connection failed\n"
         }
+    }
+    
+    private func addCertificate() {
+        // AWS endpoint: a3p5jdyzlggflb-ats.iot.sa-east-1.amazonaws.com
+        let pemCertPath = Bundle.main.path(forResource: "certificate", ofType: "pem")
+        let pemCertData = try? String(contentsOfFile: pemCertPath ?? "", encoding: .utf8)
+
+        let keyPath = Bundle.main.path(forResource: "certificate", ofType: "key")
+        let keyData = try? String(contentsOfFile: keyPath ?? "", encoding: .utf8)
+
+        let certPath = Bundle.main.path(forResource: "certificate", ofType: "cert")
+        let certData = try? String(contentsOfFile: certPath ?? "", encoding: .utf8)
+
+        let certificates = [
+            pemCertData,
+            keyData,
+            certData,
+        ].compactMap { (stringData) -> NSData? in
+            guard let data = stringData?.data(using: .utf8) else {
+                return nil
+            }
+            return NSData(data: data)
+        }
+        
+        mqtt.enableSSL = true
+        mqtt.allowUntrustCACertificate = false
+        mqtt.sslSettings = [
+            kCFStreamSSLPeerName as String: kCFNull,
+            kCFStreamSSLCertificates as String: certificates as NSObject,
+        ]
     }
     
     func disconnect() {
